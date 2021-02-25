@@ -66,7 +66,7 @@ impl AppState {
         // ----------------------------- load resources -----------------------
 
         let texture_file_path = "static/fish.png";
-        let loaded_resource = resources_loader::read_local_files(&[texture_file_path])
+        let loaded_resource = resources_loader::get_files(&[texture_file_path])
             .await
             .unwrap();
         let image =
